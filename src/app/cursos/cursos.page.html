@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-col>
+        <img src="../../assets/img/iconohead.png" alt="" class="logo">
+      </ion-col>
+      <ion-col>
+        <a href="tel:118"><img src="../../assets/img/axelfoto.png" alt="" class="llamada"></a>
+      </ion-col>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="../../assets/img/cursoscur.png" alt="">
+
+  <ion-grid>
+    <ion-row>
+      <ion-card style="border-radius: 20px; background-image: url('../../assets/sliders/sliderHome/banner1.png'); width: 100%;background-size: 100%;z-index:0;" routerLink="">
+        <ion-card-content>
+          <p style="color: white; text-align: center;">Universidad de Guadalajara</p>
+          <br>
+        </ion-card-content>
+      </ion-card>
+
+      <img src="../../assets/img/univerguadal.png" alt="" style="width: 30%; margin: 0 auto; margin-top: -15%; z-index:1;">
+    </ion-row>
+    <br>
+    <ion-row>
+      <h6 style="margin: 0 auto;">Información</h6>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-card style="width: 100%;">      
+        <ion-card-content style="background-color: #e9e9e9; width: 100%;">
+          <p>Es una institución pública de educación media - superior y superior que tiene su sede en la Zona Metropolitana de Guadalajara.  Cronológicamente, de acuerdo a su fundación, es la segunda Universidad más antigua de México, la decimoséptima de América del Norte y la decimocuarta de América Latina.</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <br>
+    <ion-row>
+      <h6 style="margin: 0 auto;">Cursos</h6>
+    </ion-row>
+    <br>
+    <ion-row>
+      <img src="../../assets/img/ux.png" alt="" (click)="form()">
+    </ion-row>
+    <br>
+    <ion-row>
+      <img src="../../assets/img/desarrolloweb.png" alt="" (click)="form()">
+    </ion-row>
+    <br>
+    <ion-row>
+      <img src="../../assets/img/inglés.png" alt="" (click)="form()">
+    </ion-row>
+    <br>
+    <ion-row>
+      <img src="../../assets/img/excell.png" alt="" (click)="form()">
+    </ion-row>
+  </ion-grid>
+  <br>
+
+  <ion-grid>
+    <ion-row>
+      <ion-button expand="block" fill="outline" style="margin: auto;" (click)='regresar()'><ion-icon name="chevron-back-outline"></ion-icon>Retornar</ion-button>
+    </ion-row>
+    <br>
+  </ion-grid>
+</ion-content>

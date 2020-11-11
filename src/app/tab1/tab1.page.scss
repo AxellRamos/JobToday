@@ -1,0 +1,26 @@
+#slideBody {
+    height: 90vh;
+  }
+  
+  .sliderItems {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #sliderItem1 {
+    background-image: url("../../assets/sliders/sliderHome/banner1.png");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #sliderItem2 {
+    background-image: url("../../assets/sliders/sliderHome/banner2.png");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #sliderItem3 {
+    background-image: url("../../assets/sliders/sliderHome/banner3.png");
+    background-size: cover;
+    background-position: 50% 50%;
+  }

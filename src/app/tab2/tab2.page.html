@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-col>
+        <img src="../../assets/img/iconohead.png" alt="" class="logo">
+      </ion-col>
+      <ion-col>
+        <a href="tel:118"><img src="../../assets/img/axelfoto.png" alt="" class="llamada"></a>
+      </ion-col>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--jkhaj-->
+
+  <div padding>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="empleos" class="segment-button-checked segment-activated">
+        Empleos
+      </ion-segment-button>
+      <ion-segment-button value="pasantias">
+        pasantías
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <!---->
+  
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'empleos'">
+      <ion-row>
+        <ion-card style="border-radius: 20px; background-image: url('../../assets/img/Imagencisco.png'); width: 100%;background-size: 100%;" routerLink="" (click)="empleo()">
+          <ion-card-content>
+            <p style="color: white;">Cisco</p>
+            <p style="color: white; font-size: 0.6em;">Tecnico en redes</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+
+      <ion-row>
+        <ion-card style="border-radius: 20px; background-image: url('../../assets/img/int/mercado.png'); width: 100%;background-size: 100%;" routerLink="" (click)="empleo()">
+          <ion-card-content>
+            <p style="color: white;">Mercado Libre</p>
+            <p style="color: white; font-size: 0.6em;">Distribuidor</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+
+      <ion-row>
+        <ion-card style="border-radius: 20px; background-image: url('../../assets/img/int/Citibamex.png'); width: 100%;background-size: 100%;" routerLink="" (click)="empleo()">
+          <ion-card-content>
+            <p style="color: white;">CITIBANAMEX</p>
+            <p style="color: white; font-size: 0.6em;">Contador</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+    </ion-list>
+  
+    <ion-list *ngSwitchCase="'pasantias'">
+      <ion-row>
+        <ion-card style="border-radius: 20px; background-image: url('../../assets/img/Benq.png'); width: 100%;background-size: 100%;" routerLink="" (click)="pasan()">
+          <ion-card-content>
+            <p style="color: white;">BENG</p>
+            <p style="color: white; font-size: 0.6em;">Diseñador</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+
+      <ion-row>
+        <ion-card style="border-radius: 20px; background-image: url('../../assets/img/int/oracle.png'); width: 100%;background-size: 100%;" routerLink="" (click)="pasan()">
+          <ion-card-content>
+            <p style="color: white;">ORACLE</p>
+            <p style="color: white; font-size: 0.6em;">Desarrollador Base de Datos</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+
+      <ion-row>
+        <ion-card style="border-radius: 20px; background-image: url('../../assets/img/int/zoho.png'); width: 100%;background-size: 100%;" routerLink="" (click)="pasan()">
+          <ion-card-content>
+            <p style="color: white;">ZOHO</p>
+            <p style="color: white; font-size: 0.6em;">Desarrollador Web</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+
+    </ion-list>
+  </div>
+</ion-content>

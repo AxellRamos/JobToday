@@ -1,0 +1,17 @@
+ion-card:before{
+    background-color: black;
+       height: 100%;
+       width: 100%;
+       content: "";
+       opacity: 0.8;
+       position: absolute;
+       display: block;
+}
+.logo{
+    width: 40% !important;
+    margin-top: 2%;
+}
+.llamada{
+    width: 10% !important;
+    float: right;
+}

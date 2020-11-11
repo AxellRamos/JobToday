@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-grid class="padre">
+    <ion-card class="car">
+      <ion-row>
+        <img src="../../assets/img/iconohead.png" alt="" class="img">
+      </ion-row>
+      <ion-row>
+        <ion-item style="width: 80%; margin: 0 auto; margin-bottom: 10%;">
+          <ion-label position="stacked">Usuario</ion-label>
+          <ion-input type="text" name="user" [(ngModel)]="user"></ion-input>
+        </ion-item>
+  
+        <ion-item style="width: 80%; margin: 0 auto; margin-bottom: 10%;">
+          <ion-label position="stacked">Contraseña</ion-label>
+          <ion-input type="password" name="contrasena" [(ngModel)]="contrasena"></ion-input>
+        </ion-item>
+        <ion-button shape="round" fill="outline" (click)="tab()" style="margin: 0  auto; width: 90%">Iniciar Sesión</ion-button>
+      </ion-row>
+      <br>
+    </ion-card>
+  </ion-grid>
+</ion-content>

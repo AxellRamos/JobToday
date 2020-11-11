@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-col>
+        <img src="../../assets/img/iconohead.png" alt="" class="logo">
+      </ion-col>
+      <ion-col>
+        <a href="tel:118"><img src="../../assets/img/axelfoto.png" alt="" class="llamada"></a>
+      </ion-col>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="../../assets/img/Imagencisco.png" alt="">
+
+  <ion-grid>
+    <ion-row style="margin-top: -30%;">
+      <h2 style="color: white;"><b>Cisco</b></h2>
+    </ion-row>
+    <ion-row style="margin-top: -9%;">
+      <p style="font-size: 0.7em; color: white;">Tecnologia de la informatica y la comunicacion</p>
+    </ion-row>
+    <br>
+    <ion-row>
+      <h6 style="margin: 0 auto;">Información</h6>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-card style="width: 100%;">      
+        <ion-card-content style="background-color: #e9e9e9; width: 100%;">
+          <p>Somos una empresa global con sede en San Jose, California, Estados Unidos, principalmente dedicada a la fabricacion, venta, mantenimiento y consultoria de equipos de telecomunicaciones</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <br>
+    <ion-row>
+      <h6 style="margin: 0 auto;">Detalles de la Oferta</h6>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-card style="width: 100%;">      
+        <ion-card-content style="background-color: #e9e9e9; width: 100%;">
+          <p>Cargo Solicitado Técnico en redes</p><br>
+          <p>Puesto Vacante 1</p><br>
+          <p>Tiempo Completo</p><br>
+          <p>Género indiferente</p><br>
+          <p>Edad 18/70</p><br>
+          <p>Vehiculo Indiferente</p><br>
+          <p>Mexico</p><br>
+          <p>Especialista en diselo e implementacion de redes</p><br>
+          <p>Experiencia: 2 años de experiencia en puestos similares</p><br>
+          <p>Certificado Universitario</p><br>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <br>
+    <ion-row style="margin: auto;">
+      <ion-card style="margin: auto;">
+        <p>Formulario</p> 
+        <ion-item>
+          <ion-label>Nombre</ion-label>
+          <ion-input name="nombre" [(ngModel)]="nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Apellido</ion-label>
+          <ion-input name="apellido" [(ngModel)]="apellido"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>Teléfono</ion-label>
+          <ion-input name="telefono" [(ngModel)]="telefono"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-textarea placeholder="Mensaje" name="prob" [(ngModel)]="prob"></ion-textarea>
+        </ion-item>
+        <br>
+        <ion-row>
+          <ion-button expand="block" fill="outline" style="margin: auto;" (click)="env()">Aplicar</ion-button>
+        </ion-row>
+        <br>
+        
+      </ion-card>
+    </ion-row> 
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row style="margin-top: 10%;">
+      <ion-button expand="block" fill="outline" style="margin: auto;" (click)='regresar()'><ion-icon name="chevron-back-outline"></ion-icon>Retornar</ion-button>
+    </ion-row>
+    <br>
+  </ion-grid>
+</ion-content>

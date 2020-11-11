@@ -1,0 +1,8 @@
+{
+  "name": "JobToday",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

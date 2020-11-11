@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-col>
+        <img src="../../assets/img/iconohead.png" alt="" class="logo">
+      </ion-col>
+      <ion-col>
+        <a href="tel:118"><img src="../../assets/img/axelfoto.png" alt="" class="llamada"></a>
+      </ion-col>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row style="margin: auto;">
+      <ion-card style="margin: auto;">
+        <p>Formulario</p> 
+        <ion-item>
+          <ion-label>Nombre</ion-label>
+          <ion-input name="nombre" [(ngModel)]="nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Apellido</ion-label>
+          <ion-input name="apellido" [(ngModel)]="apellido"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>Teléfono</ion-label>
+          <ion-input name="telefono" [(ngModel)]="telefono"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-textarea placeholder="Mensaje" name="prob" [(ngModel)]="prob"></ion-textarea>
+        </ion-item>
+        <br>
+        <ion-row>
+          <ion-button expand="block" fill="outline" style="margin: auto;" (click)="env()">Aplicar</ion-button>
+        </ion-row>
+        <br>
+        
+      </ion-card>
+    </ion-row> 
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row style="margin-top: 10%;">
+      <ion-button expand="block" fill="outline" style="margin: auto;" (click)='regresar()'><ion-icon name="chevron-back-outline"></ion-icon>Retornar</ion-button>
+    </ion-row>
+    <br>
+  </ion-grid>
+</ion-content>
