@@ -1,2 +1,2 @@
-# JodToday
+# JobToday
 Bolsa de Trabajo
